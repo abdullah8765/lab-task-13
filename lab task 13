@@ -1,0 +1,67 @@
+Abdullah Ahmed 
+53639
+BSCS 3-2
+Lab task 13
+Data Structure
+17/11/2024
+
+
+
+Question #1:
+Array: [35, 10, 55, 20, 5, 40, 60]
+Pivot: 35
+
+Iteration 1:
+Compare 10 with 35 → Leave it.
+Compare 55 with 35 → Swap 55 with 10.
+Array: [35, 55, 10, 20, 5, 40, 60].
+Iteration 2:
+Compare 20 with 35 → Leave it.
+Compare 5 with 35 → Leave it.
+Compare 40 with 35 → Swap 40 with 10.
+Array: [35, 55, 40, 20, 5, 10, 60].
+Iteration 3:
+Compare 60 with 35 → Swap 60 with 20.
+Array: [35, 55, 40, 60, 5, 10, 20].
+Final Step:
+Place the pivot 35 in its correct position.
+Array: [60, 55, 40, 35, 5, 10, 20].
+
+Pivot 35 is now at index 3.
+
+
+Question #2:
+Selection Sort Dry Run (Descending Order):
+Array: [25, 10, 40, 35, 15]
+Iteration 1:
+Assume the first element 25 is the largest.
+Compare 25 with 10 → No change.
+Compare 25 with 40 → Update the largest to 40.
+Compare 40 with 35 → No change.
+Compare 40 with 15 → No change.
+Swap 40 with 25.
+Array after Iteration 1: [40, 10, 25, 35, 15]
+
+Iteration 2:
+Assume 10 is the largest in the remaining sub-array [10, 25, 35, 15].
+Compare 10 with 25 → Update the largest to 25.
+Compare 25 with 35 → Update the largest to 35.
+Compare 35 with 15 → No change.
+Swap 35 with 10.
+Array after Iteration 2: [40, 35, 25, 10, 15]
+
+Iteration 3:
+Assume 25 is the largest in the remaining sub-array [25, 10, 15].
+Compare 25 with 10 → No change.
+Compare 25 with 15 → No change.
+No swap needed.
+Array after Iteration 3: [40, 35, 25, 10, 15]
+
+Iteration 4:
+Assume 10 is the largest in the remaining sub-array [10, 15].
+Compare 10 with 15 → Update the largest to 15.
+Swap 15 with 10.
+Array after Iteration 4: [40, 35, 25, 15, 10]
+
+Final Sorted Array:
+[40, 35, 25, 15, 10]
